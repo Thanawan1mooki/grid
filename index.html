@@ -1,109 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #D1E9F6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Responsive</title>
+</head>
+<body>
+    <div class="wrapper">
 
-.wrapper{
-    min-height: 100vh;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 15px;
-    font-size: 20px;
-    font-family: sans-serif;
-}
+        <div class="header"></div>
+        
+        <div class="main-container">
 
-.header, .footer, .content1, .content2>div>div {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #000;
-}
-.header{
-    background-image: url(./img/dream.jpg);
-    background-size: contain;
-}
-.content1{
-    background-image: url(./img/df12cf762a8931588d972f56cb85b6f5.jpg);
-    background-size: contain;
-}
-.two{
-    background-image: url(./img/22.jpg);
-    background-size: contain;
-}
-.three{
-    background-image: url(./img/7.jpg);
-    background-size: contain;
-}
-.four{
-    background-image: url(./img/66.jpg);
-    background-size: contain;
-}
-.five{
-    background-image: url(./img/20ead79b1ffd48d2c25a29ba44c510c0.jpg);
-    background-size: contain;
-}
+            <div class="content1">
+            </div>
 
-.main-container{
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.footer{
-    background-image: url(./img/472b2e999cde0bf08b237db6371d4386.jpg);
-    background-size: contain;
-}
-
-.content2{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: warp;
-    gap: 15px;
-}
-
-
-.content2>div{
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-@media screen and (max-width: 800px) { 
-    .main-container{
-        min-height: 400px;
-    }
-    
-    .content1{
-        flex: 100%;
-    }
-
-    .header{
-        min-height: 90px;
-    }
-
-    .footer{
-        min-height: 110px;
-    }
-
-}
-
-@media screen and (max-width: 520px) {
-    .content2>div{
-        flex-direction: column;
-    }
-    .content2>div>div{
-        min-height: 200px;
-    }
-    
-}
+            <div class="content2">
+                <div class="subcontent1">
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <div class="subcontent2">
+                    <div class="four"></div>
+                    <div class="five"></div>
+                </div>
+            </div>   
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
